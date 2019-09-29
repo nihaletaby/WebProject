@@ -1,0 +1,60 @@
+/*Responsive media queries*/
+/*md screen*/
+@media (min-width: 769px) and (max-width: 991px) {
+    .ser-text{
+    font-size: 20px;
+    }
+    .service-box{
+        margin-bottom: 30px;
+    }
+}
+
+/*sm screen*/
+@media (min-width: 576px) and (max-width: 768px) {
+    .ser-text {
+        font-size: 20px;
+    }
+    .service-box{
+        margin-bottom: 30px;
+    }
+}
+
+/*xs screen*/
+@media (max-width: 575px) {
+    .text-dec {
+        font-size: 20px;
+    }
+    .big-text {
+        font-size: 30px;
+    }
+    .small-text {
+        font-size: 14px;
+    }
+    .intro-para {
+        font-size: 30px;
+    }
+    .header-section p {
+        font-size: 14px;
+    }
+    .service-box {
+        margin-bottom: 30px;
+    }
+    .contact-form-button {
+        width: 40%;
+    }
+    .footer .social-links li {
+        margin: 0 5px 25px;
+    }
+    .modal-sm {
+        width: 300px;
+    }
+    .login-box-body {
+        padding: 15px 20px;
+    }
+    .navbar-default .navbar-brand {
+        margin-left: 10px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        text-align: center;
+    }
+}

@@ -1,0 +1,403 @@
+<html>
+<head>
+    <title>CS_Course_at_TU</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css" integrity="sha256-qQHUQX+gGGYfpC7Zdni08sr+h0ymXr0avmIASucY4FM=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/imagehover.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+    <div class="scrolltop"><i class="fas fa-angle-up"></i></div>
+
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CS_Course_at_TU</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#workshops">Workshops</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+                    <li class="btn-trial"><a href="#footer">Free Trail</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/ Navigation bar-->
+    <!--Modal box-->
+    <div class="modal fade" id="login" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content no 1-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center form-title">Login</h4>
+                </div>
+                <div class="modal-body padtrbl">
+
+                    <div class="login-box-body">
+                        <p class="login-box-msg">Sign in to start your session</p>
+                        <div class="form-group">
+                            <form name="" id="loginForm">
+                                <div class="form-group has-feedback">
+                                    <!----- username -------------->
+                                    <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                                    <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                                    <!---Alredy exists  ! -->
+                                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <!----- password -------------->
+                                    <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                                    <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                                    <!---Alredy exists  ! -->
+                                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="checkbox icheck">
+                                            <label>
+                                                <input type="checkbox" id="loginrem"> Remember Me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--/ Modal box-->
+    <!--Banner-->
+    <div class="banner">
+        <div class="bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="banner-text text-center">
+                        <div class="text-border">
+                            <h2 class="text-dec">Trust & Quality</h2>
+                        </div>
+                        <div class="intro-para text-center quote">
+                            <p class="big-text">Learning Today . . . Leading Tomorrow.</p>
+                            <p class="small-text">TO WHOM IT MAY CONCERN..<br>This is Modhi. I am a lecturer in the CS department at Taibah University.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ Banner-->
+    <!--Mission-->
+    <section id="mission" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="header-section text-center">
+                    <h2>Mission</h2>
+                    <p>Educating and supporting students to <span class="important-word">IGNITE</span> their <span class="important-word">PASSION FOR LEARNING</span> and <span class="important-word">ACHIEVEMENTS</span></p>
+                    <hr class="bottom-line">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ mission-->
+    <!--Vision-->
+    <section id="vision" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="header-section text-center">
+                    <h2>Vision</h2>
+                    <p>Students who are <span class="important-word">EAGER, EXCITED, EXHILARATED</span> by <span class="important-word">LEARNING</span> and <span class="important-word">ACHIEVING AT HIGH LEVELS</span></p>
+                    <hr class="bottom-line">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ vision-->
+    <!--Courses-->
+    <section id="courses" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="header-section text-center">
+                    <h2>Courses</h2>
+                    <p>Main Courses for Computer Science Students</p>
+                    <hr class="bottom-line">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 padleft-right">
+                    <figure class="imghvr-fold-up">
+                        <img src="img/p.jpg" class="img-responsive">
+                        <figcaption>
+                            <h3>Programming1,2</h3>
+                            <p>CS111 & CS112 is the fundamental of your program. It introduces you to the fundamentals of programming to master the art of coding and build a career in Computer Science.</p>
+                        </figcaption>
+                        <a href="https://sites.google.com/view/cs111-tu/home"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 padleft-right">
+                    <figure class="imghvr-fold-up">
+                        <img src="img/d.jpg" class="img-responsive">
+                        <figcaption>
+                            <h3>Data Structure and Algorithms</h3>
+                            <p>Introduction to Data Structures and Algorithms. Data Structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way.</p>
+                        </figcaption>
+                        <a href="https://sites.google.com/view/cs211-tu/home"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 padleft-right">
+                    <figure class="imghvr-fold-up">
+                        <img src="img/s.jpg" class="img-responsive">
+                        <figcaption>
+                            <h3>Computer Security</h3>
+                            <p>Security is not a tool, item or program you install in/on your system! <br /> Security is Practices! </p>
+                        </figcaption>
+                        <a href="https://sites.google.com/view/cs433-tu"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 padleft-right">
+                    <figure class="imghvr-fold-up">
+                        <img src="img/o.jpg" class="img-responsive">
+                        <figcaption>
+                            <h3>Operating Systems</h3>
+                            <p>An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs.</p>
+                        </figcaption>
+                        <a href="https://sites.google.com/view/cs323-tu/home"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 padleft-right">
+                    <figure class="imghvr-fold-up">
+                        <img src="img/c.jpg" class="img-responsive">
+                        <figcaption>
+                            <h3>Intro To Cryptography</h3>
+                            <p>Cryotherapy, sometimes referred to as cryosurgery, is a procedure used to destroy tissue of both benign and malignant lesions by the freezing and re-thawing process.</p>
+                        </figcaption>
+                        <a href="https://sites.google.com/view/cs435-tu/home"></a>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 padleft-right">
+                    <figure class="imghvr-fold-up">
+                        <img src="img/h.jpg" class="img-responsive">
+                        <figcaption>
+                            <h3>HCI</h3>
+                            <p>Human-computer interaction (HCI) is a multidisciplinary field of study focusing on the design of computer technology and, in particular, the interaction between humans (the users) and computers.</p>
+                        </figcaption>
+                        <a href="https://sites.google.com/view/cs487-tu/home"></a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Courses-->
+    <!--Workshops-->
+    <section id="workshops" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="header-section text-center">
+                    <h2>Workshops</h2>
+                    <p>To help the students to learn fundamentals of CS in a fun and effective way.</p>
+                    <hr class="bottom-line">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-box text-center">
+                        <div class="icon-box">
+                            <i class="fab fa-java color-blue"></i>
+                        </div>
+                        <div class="icon-text">
+                            <h4 class="ser-text">Java Programming Workshop</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-box text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-lock color-blue"></i>
+                        </div>
+                        <div class="icon-text">
+                            <h4 class="ser-text">Cybersecurity in the cloud- TVTC Workshop</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-box text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="icon-text">
+                            <h4 class="ser-text">Advanced cryptography Workshop</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ workshops-->
+    <!--Professional Team-->
+    <section id="professional-team" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="header-section text-center">
+                    <h2>Meet Our Professional Team</h2>
+                    <p>Our faculty members are our students whom have high programming skills, unique logical abilities with special innovative and professional services... <br />They are the closest  to the students to help them to improve their performance and productivity</p>
+                    <hr class="bottom-line">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="pm-staff-profile-container">
+                        <div class="pm-staff-profile-image-wrapper text-center">
+                            <div class="pm-staff-profile-image">
+                                <img src="img/f.png" alt="" class="img-thumbnail img-circle" />
+                            </div>
+                        </div>
+                        <div class="pm-staff-profile-details text-center">
+                            <p class="pm-staff-profile-name">Nagham AlHawas</p>
+                            <p class="pm-staff-profile-title">Software Engineer</p>
+
+                            <p class="pm-staff-profile-bio">The Department of Computer Science <br /> College of Computer Science and Engineering <br /> Taibah University <br /> Medina, Kingdom of Saudi Arabia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="pm-staff-profile-container">
+                        <div class="pm-staff-profile-image-wrapper text-center">
+                            <div class="pm-staff-profile-image">
+                                <img src="img/f.png" alt="" class="img-thumbnail img-circle" />
+                            </div>
+                        </div>
+                        <div class="pm-staff-profile-details text-center">
+                            <p class="pm-staff-profile-name">Nousseiba Mahmud</p>
+                            <p class="pm-staff-profile-title">Software Engineer</p>
+
+                            <p class="pm-staff-profile-bio">The Department of Computer Science <br /> College of Computer Science and Engineering <br /> Taibah University <br /> Medina, Kingdom of Saudi Arabia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="pm-staff-profile-container">
+                        <div class="pm-staff-profile-image-wrapper text-center">
+                            <div class="pm-staff-profile-image">
+                                <img src="img/f.png" alt="" class="img-thumbnail img-circle" />
+                            </div>
+                        </div>
+                        <div class="pm-staff-profile-details text-center">
+                            <p class="pm-staff-profile-name">Fatima Ben Mahmoud</p>
+                            <p class="pm-staff-profile-title">Software Engineer</p>
+
+                            <p class="pm-staff-profile-bio">The Department of Computer Science <br /> College of Computer Science and Engineering <br /> Taibah University <br /> Medina, Kingdom of Saudi Arabia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Faculity member-->
+    <!--Contact-->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="header-section text-center">
+                    <h2>Contact Us</h2>
+                    <p>You can send an E-mail to us if you have any qustion.<br> Please do not hesitate.</p>
+                    <hr class="bottom-line">
+                </div>
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="col-md-6 col-sm-6 col-xs-12 left">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 right">
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <!-- Button -->
+                        <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!--/ Contact-->
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="container text-center">
+
+            <h3>Start Your Free Trial Now!</h3>
+
+            <form class="mc-trial row">
+                <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+                    <div class=" controls">
+                        <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+                    </div>
+                </div>
+                <!-- End name input -->
+                <div class="form-group col-md-3 col-sm-4">
+                    <div class=" controls">
+                        <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+                    </div>
+                </div>
+                <!-- End email input -->
+                <div class="col-md-2 col-sm-4">
+                    <p>
+                        <button name="submit" type="submit" class="btn btn-block btn-submit">
+                            Submit <i class="fa fa-arrow-right"></i>
+                        </button>
+                    </p>
+                </div>
+            </form>
+            <!-- End newsletter-form -->
+            <ul class="social-links">
+                <li><a href="https://twitter.com/cs_course_at_tu"><i class="fa fa-twitter fa-fw"></i></a></li>
+                <li><a href="https://sites.google.com/view/cs-course-at-tu/home"><i class="fa fa-google-plus fa-fw"></i></a></li>
+            </ul>
+            ©2019 CS_Course_at_TU. All rights reserved
+            <div class="creators">
+                Designed by Nihal
+            </div>
+        </div>
+    </footer>
+    <!--/ Footer-->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
